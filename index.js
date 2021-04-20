@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
 // process.env.PORT lets the port be set by Heroku
 var port = process.env.PORT || 8080;
 
-app.listen(port);
+app.listen(8080);
