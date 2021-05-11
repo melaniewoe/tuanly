@@ -24,7 +24,7 @@ passport.use(
 	  proxy: true
 	}, (accessToken, refreshToken, profile, done) => {
 	  // passport callback function
-	  //check if user already exists in our db with the given profile ID
+	  // check if user already exists in our db with the given profile ID
 	  User.findOne({googleId: profile.id}).then((currentUser)=>{
 	    if(currentUser){
 	      //if we already have a record with the given profile ID
